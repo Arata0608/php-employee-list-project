@@ -4,7 +4,7 @@ session_start();
 
 // Remote DB settings
 $host = "remotemysql.com";
-$username = "jQAuR2WJ0A";
+$dbusername = "jQAuR2WJ0A";
 $password = "0wOZt3QKjx";
 $dbname = "jQAuR2WJ0A";
 
@@ -14,7 +14,7 @@ $dbname = "jQAuR2WJ0A";
 // $password = "";
 // $dbname = "employee";
 
-$mysqli = new mysqli($host, $username, $password, $dbname) or die(mysqli_error($mysqli));
+$mysqli = new mysqli($host, $dbusername, $password, $dbname) or die(mysqli_error($mysqli));
 
 if (isset($_POST["register"])) {
     $username = $_POST["username"];
