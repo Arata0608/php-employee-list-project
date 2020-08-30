@@ -29,13 +29,13 @@
         $page = isset($_GET["page"]) ? $_GET["page"] : 1;
         $start = ($page - 1) * $limit;
 
-        // Local DB settings
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "employee";
-
         // Remote DB settings
+        $host = "remotemysql.com";
+        $username = "jQAuR2WJ0A";
+        $password = "0wOZt3QKjx";
+        $dbname = "jQAuR2WJ0A";
+
+        // Local DB settings
         // $host = "localhost";
         // $username = "root";
         // $password = "";

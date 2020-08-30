@@ -2,7 +2,19 @@
 
 session_start();
 
-$mysqli = new mysqli('localhost', 'arata', 'arata0608', 'employee') or die(mysqli_error($mysqli));
+// Remote DB settings
+$host = "remotemysql.com";
+$username = "jQAuR2WJ0A";
+$password = "0wOZt3QKjx";
+$dbname = "jQAuR2WJ0A";
+
+// Local DB settings
+// $host = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "employee";
+
+$mysqli = new mysqli($host, $username, $password, $dbname) or die(mysqli_error($mysqli));
 
 $employee_id = 0;
 $name = "";
